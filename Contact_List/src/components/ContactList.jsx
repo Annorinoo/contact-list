@@ -10,7 +10,7 @@ useEffect(()=>{
   async function fetchContacts() {
     try {
       const response = await fetch(
-        "http://fsa-async-await.herokuapp.com/api/workshop/guests/"
+        "https://fsa-async-await.herokuapp.com/api/workshop/guests/"
       );
       const result = await response.json();
       setContacts(result);
